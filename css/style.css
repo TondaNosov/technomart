@@ -1,0 +1,94 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: #ffffff;
+
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-navigation {
+  font-size: 17px;
+  line-height: 20px;
+  color: #ffffff;
+
+  background-color: #32425c;
+  list-style: none;
+}
+
+.site-navigation a:link,
+.site-navigation a:visited {
+  color: #ffffff;
+}
+
+.site-navigation a:hover {
+  background-color: #293449;
+}
+
+.site-navigation a:focus {
+  background-color: #293449;
+  outline: none;
+}
+
+.site-navigation a:active {
+  background-color: #1d2739;
+  color: #878c96;
+}
+
+
+
+.catalog-item {
+  width: 300px;
+  height: 123px;
+  background-color: #ffbf47;
+  list-style: none;
+}
+
+.catalog-item h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.catalog-item a {
+  width: 135px;
+  height: 38px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #000000;
+  opacity: 0.1;  
+  text-decoration: none;
+}
+
+.catalog-item a:link,
+.catalog-item a:visited {
+  color: #ffffff;
+}
