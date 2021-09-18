@@ -5,7 +5,7 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: inherit; /*Найти инфу, почему нужно так писать*/
 }
 
 body {
@@ -15,7 +15,7 @@ body {
   font-size: 17px;
   font-weight: 400;
   color: #ffffff;
-
+  background-color: #dee3e4;
 }
 
 .visually-hidden {
@@ -33,11 +33,99 @@ a {
   text-decoration: none;
 }
 
+.header {
+  /*Найти как можно это оптимизировать*/
+  width: 940px;
+  margin: auto;
+}
+
+.header-top-box {
+  background-color: #293449;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 47px;
+  background-color: #ee3643;
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.header-logo:hover,
+.header-logo:focus {
+  background-color: #ca2c37;
+}
+
+.header-logo:active {
+  background-color: #ba2732;
+}
+
+.search-form input,
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.header-top-box button {
+  color: #ffffff;
+}
+
+.order-link {
+  background-color: #63a63e;
+}
+
+.header-middle-box {
+  margin-top: 46px;
+}
+
+.description {
+  color: #ee3643;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+}
+
+.contacts {
+  width: 270px;
+}
+
+.contacts button {
+  border: 3px solid #ffffff;
+  width: 270px;
+  height: 45px;
+  font-size: 21px;
+  color: #ee3643;
+}
+
+.contacts p {
+  font-size: 14px;
+  color: #32425c;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.user-navigation {
+  padding: 0;
+  font-size: 21px;
+}
+
+.user-navigation li {
+  list-style-type: none;
+  background-color: #ffffff;
+}
+
+.user-navigation a {
+  color: #000000;
+}
+
 .site-navigation {
   font-size: 17px;
   line-height: 20px;
   color: #ffffff;
-
+  box-shadow: inset 0 -5px 0 #293449;
+  padding: 0;
   background-color: #32425c;
   list-style: none;
 }
@@ -59,36 +147,4 @@ a {
 .site-navigation a:active {
   background-color: #1d2739;
   color: #878c96;
-}
-
-
-
-.catalog-item {
-  width: 300px;
-  height: 123px;
-  background-color: #ffbf47;
-  list-style: none;
-}
-
-.catalog-item h3 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 30px;
-}
-
-.catalog-item a {
-  width: 135px;
-  height: 38px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  text-transform: uppercase;
-  background-color: #000000;
-  opacity: 0.1;  
-  text-decoration: none;
-}
-
-.catalog-item a:link,
-.catalog-item a:visited {
-  color: #ffffff;
 }
