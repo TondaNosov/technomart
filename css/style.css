@@ -32,6 +32,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  padding: 0;
+}
+
 /* ------------------------------------------- */
 
 .header {
@@ -161,30 +165,38 @@ button {
   color: #878c96;
 }
 
+/* ------------------------------------------- */
+
 .main {
 }
 
-.catalog {
+.catalog,
+.advantages {
   width: 940px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.catalog-list {
+.catalog-list,
+.advantages-list {
+  padding: 0;
 }
 
-.catalog-item {
+.catalog-item,
+.advantages-item {
   width: 300px;
   height: 123px;
   background-color: #ffbf47;
 }
 
-.catalog-item h3 {
+.catalog-item h3,
+.advantages-item h3 {
   font-size: 24px;
   font-weight: 700;
 }
 
-.catalog-item a {
+.catalog-item a,
+.advantages-item a {
   color: #ffffff;
   font-family: Cuprum;
   font-size: 14px;
@@ -197,4 +209,126 @@ button {
   padding-top: 12px;
   padding-bottom: 14px;
   background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.gallery {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.gallery figure {
+  margin: 0;
+}
+
+.gallery-description {
+  position: absolute;
+  top: 27px;
+  left: 24px;
+}
+
+.gallery-description h3 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.gallery-description p {
+  margin-top: 8px;
+  font-size: 18px;
+}
+
+.gallery a {
+  position: absolute;
+  bottom: 22px;
+  left: 25px;
+  width: 195px;
+  height: 38px;
+  background-color: #ee3643;
+  border-radius: 3px;
+  text-align: center;
+  color: #ffffff;
+  font-family: Cuprum;
+  font-size: 14px;
+  line-height: 38px;
+  text-transform: uppercase;
+}
+
+.popular-products,
+.popular-producers {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.popular-products-box,
+.popular-producers-box {
+  height: 89px;
+  background-color: #f9f5f0;
+}
+
+.popular-products-box h2,
+.popular-producers-box h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.button {
+  background-color: #ee3643;
+  height: 38px;
+  width: 253px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.popular-products-item {
+  width: 220px;
+  height: 318px;
+  border: 1px solid #eaeaea;
+  text-align: center;
+}
+
+.popular-products-item h3 {
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
+  margin: 0;
+}
+
+.popular-products-item p {
+  font-family: "PT Sans";
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #a9a9a9;
+  margin: 0;
+}
+
+.popular-products-item p:last-child  {
+  color: #ffffff;
+  background-image: url("../img/price_tag.png");
+  width: 141px;
+  height: 38px;
+  margin: 0;
+}
+
+.popular-producers-item {
+  width: 220px;
+  height: 145px;
+  border: 1px solid #eaeaea;
+  text-align: center;
+}
+
+.services {
+  background-color: #f4f8f9;
 }
