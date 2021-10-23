@@ -5,7 +5,7 @@
     <title>ТЕХНОМАРТ - магазин строительных материалов</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
-    <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -15,15 +15,15 @@
           <a class="header-logo" href="index.html">
             <img src="img/logo.svg" width="109" height="19" alt="ТЕХНОМАРТ">
           </a>   
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
+          <!-- <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
             <label for="search">Поиск:</label>
             <input id="search" type="text" name="search">
           </form>
           <button type="button">Закладки: <span>0</span></button>
-          <button type="button">Корзина: <span>0</span></button>
+          <button type="button">Корзина: <span>0</span></button> -->
           <a class="order-link" href="#">Оформить заказ</a>
         </div>
-        </div>
+      </div>
       <div class="header-middle-box">
         <p class="description">
           Интернет-магазин<br>
@@ -59,47 +59,49 @@
         <h2 class="visually-hidden">Каталог</h2>
         
         <ul class="catalog-list">
-          <li class="catalog-item">
+          <li class="catalog-item yellow">
             <h3>Материалы</h3>
             <a href="#">на любой вкус</a>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item light-blue">
             <h3>Инструмент</h3>
             <a href="#">на все случаи</a>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item purple">
             <h3>Техника</h3>
             <a href="#">для стройки</a>
           </li>
         </ul>
       </section>
 
-      <section class="gallery">
-        <h2 class="visually-hidden">Галерея</h2>
-        <figure>
-          <img src="img/slider.png" width="620" height="266" alt="Дрели">
-          <figcaption class="gallery-description">
-            <h3>Дрели</h3>
-            <p>Соседям на радость!</p>
-          </figcaption>
-          <a href="#">Открыть каталог</a>
-        </figure>
-      </section>
-
-      <section class="advantages">
-        <h2 class="visually-hidden">Преимущества</h2>
-
-        <ul class="advantages-list">
-          <li class="advantages-item">
-            <h3>Скидки 50%</h3>
-            <a href="#">на 350 товаров</a>
-          </li>
-          <li class="advantages-item">
-            <h3>Доставка</h3>
-            <a href="#">бесплатно</a>
-          </li>
-        </ul>
-      </section>
+      <div class="index-row">
+        <section class="gallery">
+          <h2 class="visually-hidden">Галерея</h2>
+          <figure>
+            <img src="img/slider.png" width="620" height="266" alt="Дрели">
+            <figcaption class="gallery-description">
+              <h3>Дрели</h3>
+              <p>Соседям на радость!</p>
+            </figcaption>
+            <a href="#">Открыть каталог</a>
+          </figure>
+        </section>
+  
+        <section class="advantages">
+          <h2 class="visually-hidden">Преимущества</h2>
+  
+          <ul class="advantages-list">
+            <li class="advantages-item light-green">
+              <h3>Скидки 50%</h3>
+              <a href="#">на 350 товаров</a>
+            </li>
+            <li class="advantages-item yellow">
+              <h3>Доставка</h3>
+              <a href="#">бесплатно</a>
+            </li>
+          </ul>
+        </section>
+      </div>
 
       <section class="popular-products">
         <div class="popular-products-box">
@@ -135,7 +137,7 @@
             <a href="#">
               <img src="img/bosch_bfg_2000.png" width="218" height="170" alt="Перфоматор bosch bfg 2000">
               <h3>Перфоратор BOSCH<br>BFG 2000</h3>
-              <p><del></del></p>
+              <p><del><br></del></p>
               <p>12500 Р.</p>
             </a>
           </li>
